@@ -37,24 +37,6 @@ void NoodleClearRect(NSRect rect)
 	NSRectFill(rect);
 }
 
-@interface NSTableView ()
-
-#pragma mark Sticky Row Header methods
-
-// Returns index of the sticky row previous to the first visible row.
-- (NSInteger)_previousStickyRow;
-
-// Returns index of the sticky row after the first visible row.
-- (NSInteger)_nextStickyRow;
-
-- (void)_updateStickyRowHeaderImageWithRow:(NSInteger)row;
-
-// Returns the view used for the sticky row header
-- (id)_stickyRowHeaderView;
-
-@end
-
-
 @implementation NSTableView (NoodleExtensions)
 
 #pragma mark Sticky Row Header methods
